@@ -1,0 +1,14 @@
+<h4>La tua squadra pokemon</h4>
+<ng-container *ngFor="let pokemon of pokemonAccepted" >
+  <div *ngIf="pokemonAccepted.length > 0">
+      <div class="accepted d-flex flex-column align-center my-3">
+        <p>{{pokemon.name}}</p>
+        <img  style="width: 100px; height: 100px" src="{{pokemon.sprites.front_default}}" alt="" *ngIf="pokemon.sprites">
+        <p class="text-center">{{pokemon.pokemon.name | titlecase}}</p>
+      </div>
+  </div>
+</ng-container>
+
+
+
+
